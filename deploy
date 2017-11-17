@@ -1,0 +1,15 @@
+#!/bin/sh
+
+rsync -rav --delete \
+	--exclude '.*' \
+	--exclude 'known-articles.json' \
+	--exclude node_modules \
+	. 'enceladus:~/unusual-wikipedia-twitter-bot/'
+
+ssh enceladus "\
+cd ~/unusual-wikipedia-twitter-bot
+npm i
+npm update
+forever stop unusual-wikipedia-twitter-bot
+export NODE_ENV=production
+forever start -a --uid unusual-wikipedia-twitter-bot index.js"

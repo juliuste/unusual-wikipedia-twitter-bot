@@ -1,0 +1,11 @@
+{
+	"twitter": {
+		"key": "X",
+		"key_secret": "X",
+		"token": "X",
+		"token_secret": "X"
+	},
+	"postDays": [2, 5, 7],
+	"knownArticlesFile": "./known-articles.json",
+	"debug": false
+}
