@@ -3,7 +3,7 @@
 	"description": "Twitter bot presenting randomly selected unusual Wikipedia articles",
 	"version": "0.0.0",
 	"keywords": [],
-	"author": "Julius Tens <mail@juliustens.de>",
+	"author": "Julius Tens <mail@juliustens.eu>",
 	"homepage": "https://github.com/juliuste/unusual-wikipedia-twitter-bot",
 	"repository": "juliuste/unusual-wikipedia-twitter-bot",
 	"bugs": "https://github.com/juliuste/unusual-wikipedia-twitter-bot/issues",
