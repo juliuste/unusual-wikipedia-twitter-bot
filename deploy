@@ -4,12 +4,11 @@ rsync -rav --delete \
 	--exclude '.*' \
 	--exclude 'known-articles.json' \
 	--exclude node_modules \
-	. 'enceladus:~/unusual-wikipedia-twitter-bot/'
+	. 'europa:~/bots/unusual-wikipedia-twitter-bot/'
 
-ssh enceladus "\
-cd ~/unusual-wikipedia-twitter-bot
+ssh europa "\
+cd ~/bots/unusual-wikipedia-twitter-bot
 npm i
 npm update
-forever stop unusual-wikipedia-twitter-bot
-export NODE_ENV=production
-forever start -a --uid unusual-wikipedia-twitter-bot index.js"
+forever-service delete unusual-wikipedia-twitter-bot
+forever-service install unusual-wikipedia-twitter-bot -e 'NODE_ENV=production ENV=production' --start -s index.js"
