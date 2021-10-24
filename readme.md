@@ -1,3 +1,5 @@
+# :warning: UNMAINTAINED / NO LONGER ACTIVE
+
 # unusual-wikipedia-twitter-bot
 
 Twitter bot presenting randomly selected [unusual Wikipedia articles](https://en.wikipedia.org/wiki/Wikipedia:Unusual_articles). [@unusualBot](https://twitter.com/unusualBot).
